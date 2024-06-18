@@ -19479,6 +19479,28 @@ iframe {
   overflow: unset;
 }
 
+.n-title {
+  font-family: "Volkhov", "DM Serif Display", cursive;
+  font-weight: 700;
+  font-size: 2.88651rem;
+  color: #181E4B;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .n-title {
+    font-size: 4.62363rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .n-title {
+    font-size: 5.20158rem;
+  }
+}
+
 .hero-title {
   font-family: "Volkhov", "DM Serif Display", cursive;
   font-weight: 700;
@@ -19642,3 +19664,14 @@ iframe {
 -----------------------------------------------*/
 
 /*# sourceMappingURL=theme.css.map */
+
+.stamp-border {
+  --r: 10px; /* control the radius of the circles */
+  padding: calc(2*var(--r));
+  filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+  background: 
+    radial-gradient(var(--r),#0000 98%,#fff) round
+      calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+    linear-gradient(#fff 0 0)  no-repeat
+      50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+}
