@@ -7,3 +7,8 @@
   margin: 1rem;
   transform: rotate(12deg);
 }
+
+.container {
+  max-width: 85%;
+  width: 85%;
+}
